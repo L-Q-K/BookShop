@@ -21,15 +21,15 @@
       <div class ="row">
         {% for book in books %}
           <div class="col-md-6 m*-3">
-            <div class="card-girl-type card mb-4">
-              <img src="{{ book["image"] }}" alt="{{ book["name"] }}" class ="card-girl-img mb-3 img-fluid card-img-top">
+            <div class="card-book card mb-4">
+              <img src="{{ book["image"] }}" alt="{{ book["name"] }}" class ="card-book-img mb-3 img-fluid card-img-top">
               <div class="card-body">
                 <h4 class="card-title"> {{ book["name"] }} </h4>
                 <p class="text-danger">{{ book["description"] }}</p>
               </div>
               <div class ="card-footer">
                 <div class="clearfix">
-                  <button class="btn btn-dark float-right">Nào cùng lạc trôi</button>
+                  <a class="btn btn-dark float-right" href="/read/{{ book.id }}">Nào cùng lạc trôi</a>
                 </div>
               </div>
             </div>

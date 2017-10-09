@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+<div class="container">
+  <table class="table table-striped">
+    <thead class="text-light">
+      <tr>
+        <th>#</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Image</th>
+        <th>Operation</th>
+      </tr>
+    </thead>
+    <tbody >
+      {% for book in books %}
+        <tr>
+          <td class = "text-danger">{{ loop.index }}</td>
+          <td class ="text-warning">{{ book.name }}</td>
+          <td class="text-success">{{ book.description }}</td>
+          <td><a target="_blank" href="{{ book.image }}">Full HD</a></td>
+          <td >
+            <a href="#" class="text-purple">
+              <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+            </a>
+            <a href="/delete_book/{{ book.id }}" class="text-purple">
+              <i class="fa fa-trash-o" aria-hidden="true"></i>
+            </a>
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}

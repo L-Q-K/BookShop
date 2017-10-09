@@ -6,25 +6,21 @@
   /*font-size: 30px;
 }*/
 
-h4 { /* all */
-  color: purple;
-}
-
 body{
-  background-color: black;
+  background-color: lightblue;
 }
 
-.card-girl-type {
+.card-book{
   min-height: 450px !important;
 }
 
-.card-girl-img {
+.card-book-img {
   object-fit: cover;
   height: 20vw !important;
 }
 
 .jumbotron {
-    background-color: #88f8f2 !important;
+    background-color: #c90000 !important;
 }
 
 .ma-1 {
